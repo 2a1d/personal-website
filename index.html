@@ -35,26 +35,27 @@
         <!-- end of javasript nav -->
     </nav>
 
-    <header>
+    <header id="home">
         <img class="header_img" src="images/heading.jpeg" alt="Heading image">
         <h1 class="heading-text">Welcome World</h1>
     </header>
 
     <!-- About me -->
 
-    <main class="about_me">
+    <main class="about_me" id="about_me">
         <h2>About Me</h2>
+        <img class="img-1" src="images/motorbike.jpeg" alt="old motorbike">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti expedita distinctio molestias sed, suscipit quos assumenda placeat repudiandae harum quasi totam quibusdam. Totam et minus facere laboriosam sunt quia cupiditate tempore fugiat doloremque porro iure eius ipsum possimus recusandae quis reprehenderit dolores ipsam iusto adipisci vero alias, dignissimos eos? Reprehenderit, eius. Laboriosam, unde. Soluta molestiae ex ratione totam perferendis quasi dolorum impedit, dolor ipsum tempore voluptates vel dolores. Corrupti, animi?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vel laudantium corrupti voluptates provident enim facere impedit voluptate doloremque, minima tempore nemo fuga modi accusamus dolore porro natus perspiciatis! Itaque quaerat, rerum dicta accusamus temporibus libero id dolore aperiam! Corporis aliquam quae possimus blanditiis sed odit, dolorum, nesciunt deleniti alias quia voluptate impedit mollitia. Incidunt ea vero sed eaque! Magni praesentium ullam totam dolores.</p>
-        <img src="images/motorbike.jpeg" alt="old motorbike">
+        <img class="img-2" src="images/diving.jpeg" alt="diving">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at, inventore alias quam ullam odio itaque veritatis, aliquam corrupti hic corporis maiores doloremque quod. Dolore, odit ipsum? Ab nemo ipsum ea, iusto hic animi dolorum quae odit fugiat voluptatibus? Placeat iure officia id obcaecati, illum itaque qui possimus ipsum nulla, quibusdam ipsam deleniti sapiente, unde exercitationem architecto sed! Praesentium accusamus nostrum dolores?</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit odit cum beatae nostrum ea fuga impedit numquam doloremque, magnam, quibusdam consectetur quis repellat nobis cumque aperiam qui dolores, repellendus omnis at voluptas repudiandae accusantium ipsam natus! Ipsa natus adipisci totam inventore aut laudantium quam voluptas? Nisi molestiae inventore, modi ipsam vel facere accusamus obcaecati, excepturi recusandae mollitia officia perferendis dicta unde placeat alias tempore, dolorum maiores minus?</p>
-        <img src="images/diving.jpeg" alt="diving">
+        
     </main>
 
     <!-- Travel Gallery Grid -->
 
-    <main class="travel">
+    <main class="travel" id="travel">
         <h2>Travel</h2>
         <blockquote>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique praesentium error omnis quas rerum.
@@ -63,21 +64,21 @@
         <!-- portfolio gallery grid -->
 
         <div class="row">
-            <div class="column">
+            <div class="column1">
               <div class="content">
                 <img src="images/paris.jpeg" alt="Paris" style="width:100%">
                 <h3>Paris</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nam harum obcaecati necessitatibus modi officiis delectus doloribus, nemo eius quibusdam ducimus voluptatibus recusandae sunt quisquam optio, numquam libero maxime nisi quod neque accusamus? Ipsum maxime blanditiis sapiente voluptatum hic.</p>
               </div>
             </div>
-            <div class="column">
+            <div class="column1">
               <div class="content">
                 <img src="images/fiji.jpeg" alt="Fiji" style="width:100%">
                 <h3>Fiji</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quidem eligendi ratione temporibus ducimus laborum itaque deleniti. Atque tempore exercitationem quod quisquam aliquam. Architecto quas ipsum eum alias, quibusdam libero.</p>
               </div>
             </div>
-            <div class="column">
+            <div class="column1">
               <div class="content">
                 <img src="images/venice.jpeg" alt="Venice" style="width:100%">
                 <h3>Venice</h3>
@@ -89,9 +90,11 @@
     
     <!-- Gallery slidshow -->
 
-    <main>
+    <main class="gallery" id="gallery">
+        <h2>Gallery</h2>
+
         <!-- Container for the image gallery -->
-<div class="container">
+        <div class="container">
 
     <!-- Full-width images with number text -->
     <div class="mySlides">
@@ -155,10 +158,43 @@
       </div>
     </div>
   </div>
+
+        <!-- javascript gallery start -->
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("demo");
+              let captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>
     </main>
 
     <!-- Feedback -->
-    <main>
+    <main class="feedback" id="feedback">
+        <h2>Feedback</h2>
         <div class="container">
             <form action="action_page.php">
               <div class="row">
