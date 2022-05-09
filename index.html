@@ -17,10 +17,27 @@
             <a href="#gallery">Gallery</a>
             <a href="#feedback">Feedback</a>
         </div>
+        <!-- javascript nav -->
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+        <!-- end of javasript nav -->
     </nav>
+
     <header>
-        <img src="images/heading.jpeg" alt="Heading image">
-        <h1>Welcome World</h1>
+        <img class="header_img" src="images/heading.jpeg" alt="Heading image">
+        <h1 class="heading-text">Welcome World</h1>
     </header>
 
     <!-- About me -->
