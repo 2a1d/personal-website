@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 48 43" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(-130 -13)" fill="#7d3e1d" data-name="Group 3">
+<text transform="translate(130 52)" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="20" font-weight="700">
+<tspan x="0" y="0">ZAID</tspan>
+</text>
+<g transform="translate(-88 -22)" data-name="Group 2">
+<g transform="translate(227 35)" data-name="Polygon 1">
+<path d="m18.191 18.5h-17.382l8.691-17.382 8.691 17.382z"/>
+<path d="m9.5 2.2361-7.882 15.764h15.764l-7.882-15.764m0-2.2361 9.5 19h-19l9.5-19z" fill="#000"/>
+</g>
+<g transform="translate(237 35)" data-name="Polygon 2">
+<path d="m18.191 18.5h-17.382l8.691-17.382 8.691 17.382z"/>
+<path d="m9.5 2.2361-7.882 15.764h15.764l-7.882-15.764m0-2.2361 9.5 19h-19l9.5-19z" fill="#000"/>
+</g>
+</g>
+</g>
+</svg>
