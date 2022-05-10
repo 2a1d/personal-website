@@ -1,5 +1,12 @@
 /* Style the navbar */
 
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #DAC1AB;
+}
+
 #navbar {
     overflow: hidden;
     background-color: #E3C7AF;
@@ -17,6 +24,7 @@
 
   .svg{
       width: 50px;
+      margin: 10px 1400px 0 0 ;
   }
   
   
@@ -31,6 +39,10 @@
   .sticky + .content {
     padding-top: 60px;
   }
+
+
+/* nav end */
+
 
 
 /* Heading image start */
@@ -65,6 +77,7 @@
 }
 h2{
     text-align: center;
+    color: #8E5537;
 }
 
 .about_me img{
@@ -95,17 +108,13 @@ h2{
 
 blockquote{
     text-align: center;
+    font-style: italic;
 }
 
   * {
     box-sizing: border-box;
   }
   
-  body {
-    background-color: #f1f1f1;
-    padding: 20px;
-    font-family: Arial;
-  }
   
   /* Center website */
   .main {
@@ -156,7 +165,7 @@ blockquote{
   /* Gallery start */
 
 .gallery h2{
-    margin: 100px 0 0 0;
+    margin: 200px 0 20 0;
 }
 
   * {
@@ -185,7 +194,7 @@ blockquote{
   position: absolute;
   top: 40%;
   width: auto;
-  padding: 16px;
+  padding: 30px;
   margin-top: -50px;
   color: white;
   font-weight: bold;
@@ -209,9 +218,9 @@ blockquote{
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #000000;
+  color: #ffffff;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 30px 12px;
   position: absolute;
   top: 0;
 }
@@ -219,9 +228,9 @@ blockquote{
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
+  background-color: #000000;
+  padding: 12px 16px;
+  color: #ffffff;
 }
 
 .row:after {
@@ -259,7 +268,7 @@ blockquote{
 input[type=text], select, textarea{
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
@@ -285,7 +294,7 @@ input[type=text], select, textarea{
   /* Style the container */
   .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #D2B69E;
     padding: 20px;
   }
   
